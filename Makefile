@@ -393,4 +393,4 @@ pack: webpack  # Alias
 
 all-the-plones:
 	$(MAKE) git-commit-auto-push
-	aws s3 cp --exclude=.git --recursive . s3://all-the-plones
+	aws s3 cp --recursive . s3://all-the-plones --exclude=.git
