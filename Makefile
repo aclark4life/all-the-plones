@@ -393,9 +393,4 @@ pack: webpack  # Alias
 
 all-the-plones:
 	$(MAKE) git-commit-auto-push
-	aws s3 cp supervisor s3://all-the-plones-1
-	aws s3 cp plone-4-3 s3://all-the-plones-1
-	aws s3 cp plone-4-3-18.cfg  s3://all-the-plones-1
-	aws s3 cp zeo s3://all-the-plones-1
-	aws s3 cp zope-2-13-27-versions.cfg s3://all-the-plones-1
-	aws s3 cp zopetoolkit-1-0-8-zopeapp-versions.cfg s3://all-the-plones-1
+	aws s3 cp --recursive . s3://all-the-plones
