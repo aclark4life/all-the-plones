@@ -1,5 +1,5 @@
 [buildout]
-extends = https://raw.github.com/plock/pins/master/supervisor
+extends = https://raw.github.com/aclark4life/all-the-plones/master/supervisor
 parts += zeo 
 
 [plone]
