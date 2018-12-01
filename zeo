@@ -1,0 +1,28 @@
+[buildout]
+extends = https://raw.github.com/plock/pins/master/supervisor
+parts += zeo 
+
+[plone]
+zeo-client = true
+shared-blob = on
+http-address = ${ports:plone}
+zeo-address = ${ports:zeo}
+
+[ports]
+plone = 8080
+zeo = 8100
+
+[supervisor]
+programs +=
+    0 zeo ${buildout:directory}/bin/zeo [ fg ]
+
+[zeo]
+recipe = plone.recipe.zeoserver
+eggs = ${plone:eggs}
+zeo-address = ${ports:zeo}
+
+[zeo-py24]
+recipe = plone.recipe.zope2zeoserver
+eggs = ${plone:eggs}
+zeo-address = ${ports:zeo}
+zope2-location = ${zope2:location}
