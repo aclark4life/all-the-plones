@@ -387,3 +387,13 @@ webpack-init:
 webpack:
 	./node_modules/.bin/webpack
 pack: webpack  # Alias
+
+# all-the-plones
+.DEFAULT_GOAL=all-the-plones
+
+all-the-plones:
+	$(MAKE) git-commit-auto-push
+	aws s3 cp supervisor s3://all-the-plones-1
+	aws s3 cp plone-4-3 s3://all-the-plones-1
+	aws s3 cp plone-4-3-18.cfg  s3://all-the-plones-1
+	aws s3 cp zeo s3://all-the-plones-1
