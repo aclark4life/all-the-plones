@@ -3,8 +3,8 @@ parts += app
 
 [app]
 recipe = collective.recipe.template
-url = https://all-the-plones.aclark.net/app.ini
-output = ${buildout:directory}/app.ini
+url = https://all-the-plones.aclark.net/wsgi.ini
+output = ${buildout:directory}/wsgi.ini
 
 [plone]
 eggs +=
