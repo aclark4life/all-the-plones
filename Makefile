@@ -392,5 +392,5 @@ pack: webpack  # Alias
 .DEFAULT_GOAL=all-the-plones
 all-the-plones:
 	-$(MAKE) git-commit-auto-push
-	aws s3 cp --exclude "*" --include "*.cfg" --include plone-4-3 --include supervisor --include zeo --recursive . s3://all-the-plones --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+	aws s3 cp --exclude "*" --include "*.cfg" --include plone-4-3 --include supervisor --include wsgi --include zeo --recursive . s3://all-the-plones --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
 	aws cloudfront create-invalidation --distribution-id E1KMZQ01LULEIM --paths "/*"
