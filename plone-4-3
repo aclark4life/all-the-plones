@@ -6,3 +6,4 @@ parts = plone
 
 [plone]
 recipe = plone.recipe.zope2instance
+user = admin:admin
