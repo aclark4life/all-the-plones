@@ -1,3 +1,5 @@
 [buildout]
 extends =
+    https://s3.amazonaws.com/all-the-plones/base
     https://s3.amazonaws.com/all-the-plones/plone-4-3-18-versions.cfg
+    https://s3.amazonaws.com/all-the-plones/versions
