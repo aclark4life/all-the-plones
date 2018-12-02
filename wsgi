@@ -1,4 +1,11 @@
 [buildout]
+parts += app
+
+[app]
+recipe = collective.recipe.template
+url = https://all-the-plones.aclark.net/app.ini
+output = ${buildout:directory}/app.ini
+
 
 [plone]
 eggs +=
