@@ -2,3 +2,7 @@
 extends =
     https://s3.amazonaws.com/all-the-plones/plone-4-3-18-versions.cfg
 newest = false
+parts = plone
+
+[plone]
+recipe = plone.recipe.zope2instance
