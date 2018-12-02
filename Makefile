@@ -392,5 +392,5 @@ pack: webpack  # Alias
 .DEFAULT_GOAL=all-the-plones
 all-the-plones:
 	-$(MAKE) git-commit-auto-push
-	aws s3 cp --exclude "*" --include "*.cfg" . s3://all-the-plones
+	aws s3 cp --exclude "*" --include "*.cfg" --recursive . s3://all-the-plones
 # 	aws cloudfront create-invalidation --distribution-id E1KMZQ01LULEIM --paths "/*"
