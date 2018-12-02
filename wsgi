@@ -13,4 +13,4 @@ eggs +=
     repoze.retry
     repoze.tm2
     repoze.vhm
-scripts += wsgi
+scripts += paster
