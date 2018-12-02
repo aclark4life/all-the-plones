@@ -10,6 +10,7 @@ user = admin:admin
 eggs =
     Pillow
     Plone
+    zope2_bootstrap
 
 [versions]
 Pillow = 5.2.0
