@@ -1,3 +1,4 @@
 [buildout]
 extends =
     https://s3.amazonaws.com/all-the-plones/plone-4-3-18-versions.cfg
+newest = false
