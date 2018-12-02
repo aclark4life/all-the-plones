@@ -10,7 +10,7 @@ user = admin:admin
 eggs =
     Pillow
     Plone
-    plonetheme.diazo_sunstrap
+    plonetheme.diazo_sunburst
     zope2_bootstrap
 
 [versions]
