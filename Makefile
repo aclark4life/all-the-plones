@@ -393,4 +393,4 @@ pack: webpack  # Alias
 all-the-plones:
 	-$(MAKE) git-commit-auto-push
 	aws s3 cp --exclude "*" --include "*.cfg" --include plone-4-3 --include supervisor --include zeo --recursive . s3://all-the-plones
-# 	aws cloudfront create-invalidation --distribution-id E1KMZQ01LULEIM --paths "/*"
+	aws cloudfront create-invalidation --distribution-id E1KMZQ01LULEIM --paths "/*"
