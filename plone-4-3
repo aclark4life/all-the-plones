@@ -7,3 +7,6 @@ parts = plone
 [plone]
 recipe = plone.recipe.zope2instance
 user = admin:admin
+
+[versions]
+Pillow = 5.3.0
