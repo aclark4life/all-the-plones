@@ -1,6 +1,6 @@
 [buildout]
 extends =
-    https://s3.amazonaws.com/all-the-plones/plone-4-3-18-versions.cfg
+    https://raw.githubusercontent.com/aclark4life/buildout-plone/master/plone-4-3-18-versions.cfg
 newest = false
 parts = plone
 
@@ -14,4 +14,4 @@ eggs =
     zope2_bootstrap
 
 [versions]
-Pillow = 5.2.0
+Pillow = 6.0.0
