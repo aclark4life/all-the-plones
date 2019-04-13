@@ -399,3 +399,10 @@ webpack-init:
 webpack:
 	./node_modules/.bin/webpack
 pack: webpack  # Alias
+
+
+# buildout-plone
+.DEFAULT_GOAL=buildout-plone
+buildout-plone:
+	-$(MAKE) git-commit-auto-push
+	aws s3 cp --exclude "*" --include "*.cfg" --include wsgi.ini --include plone-4-3 --include supervisor --include wsgi --include zeo --recursive . s3://buildout-plone --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
