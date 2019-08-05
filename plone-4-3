@@ -14,4 +14,4 @@ eggs =
     zope2_bootstrap
 
 [versions]
-Pillow = 6.0.0
+Pillow = 6.1.0
